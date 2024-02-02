@@ -1,9 +1,7 @@
 package br.com.blz.productmanagement.dto
 
-import br.com.blz.productmanagement.model.Inventory
-
-data class ProductDto (
+data class NewProductDTO (
   val sku: Int,
   val name: String,
-  val inventory: Inventory
+  val inventory: NewInventoryDTO
 )
