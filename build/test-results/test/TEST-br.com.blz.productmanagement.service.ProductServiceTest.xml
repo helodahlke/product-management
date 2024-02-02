@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.blz.productmanagement.service.ProductServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-02-02T21:21:31" hostname="DESKTOP-E074UR5" time="0.081">
+<testsuite name="br.com.blz.productmanagement.service.ProductServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-02-02T23:04:59" hostname="DESKTOP-E074UR5" time="0.08">
   <properties/>
-  <testcase name="create a new product" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.055"/>
-  <testcase name="return existing products by SKU" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.003"/>
+  <testcase name="create a new product" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.05"/>
+  <testcase name="return existing products by SKU" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.001"/>
   <testcase name="return marketable false" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.001"/>
-  <testcase name="return quantity zero" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.001"/>
   <testcase name="delete existing product by sku" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.013"/>
+  <testcase name="throw no sku found exception" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.002"/>
+  <testcase name="throw Sku does not match the sku passed on body" classname="br.com.blz.productmanagement.service.ProductServiceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

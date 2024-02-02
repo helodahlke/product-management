@@ -21,13 +21,17 @@ class ProductService(
   }
 
   fun create(newProductDTO: NewProductDTO): Product {
+    val index = products.indexOfFirst { it.sku == newProductDTO.sku }
+
+    if (index != -1)
+      throw Exception("The sku can only be created once.")
+
     val product = newProductDTO.toModel()
     products.add(product)
     return product
   }
 
   fun editBySku(sku: Int, newProductDTO: NewProductDTO): Product {
-
     if(sku != newProductDTO.sku) throw Exception("Sku does not match the sku passed on body")
 
     val newProduct = newProductDTO.toModel()
@@ -38,14 +42,11 @@ class ProductService(
 
     products[index] = newProduct
     return newProduct
-
   }
 
   fun delete(sku: Int): String{
-
     products.removeIf { it.sku == sku }
     return "Product $sku deleted succesfully"
-
   }
 
 }
